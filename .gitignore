@@ -1,18 +1,7 @@
-# Maven
 target/
-
-# Eclipse / IDE files
-.settings/
-.classpath
-.project
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Logs
+bin/
 *.log
-
-# Temporary files
-*.tmp
-*.swp
+*.class
+.settings/
+.project
+.classpath
