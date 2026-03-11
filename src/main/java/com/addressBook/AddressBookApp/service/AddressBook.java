@@ -1,19 +1,23 @@
 package com.addressBook.AddressBookApp.service;
 
+import java.util.ArrayList;
 import com.addressBook.AddressBookApp.model.Contact;
 
 public class AddressBook {
 
-    Contact contact;
+    ArrayList<Contact> list = new ArrayList<>();
 
     public void addContact(Contact contact)
     {
-        this.contact=contact;
+        list.add(contact);
     }
 
     public void display()
     {
-        System.out.println(contact);
+        for(Contact c : list)
+        {
+            System.out.println(c);
+        }
     }
 
 }
