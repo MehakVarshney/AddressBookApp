@@ -1,6 +1,7 @@
 package com.addressBook.AddressBookApp.model;
 
 public class Contact {
+	private Long id;
 	private String firstName;
 	private String lastName;
 	private String address;
@@ -13,8 +14,9 @@ public class Contact {
 	public Contact() {
 	}
 
-	public Contact(String firstName, String lastName, String address, String city, String state, String zip,
+	public Contact(Long id, String firstName, String lastName, String address, String city, String state, String zip,
 			String phoneNumber, String email) {
+		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.address = address;
@@ -23,6 +25,14 @@ public class Contact {
 		this.zip = zip;
 		this.phoneNumber = phoneNumber;
 		this.email = email;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getFirstName() {
